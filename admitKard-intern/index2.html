@@ -1,0 +1,162 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>VERIFICATION</title>
+
+    <style type="text/css">
+    	
+     #heading {
+
+     	font-size: 55px;
+     }
+
+     #fullcontent {
+
+     	margin: 5vw;
+     	display: flex;
+     	flex-direction: column;
+     }
+
+     #top {
+
+     	margin-top: 2vw; 
+     	text-align: left;
+     }
+
+     #main {
+     	display: flex;
+     	justify-content: center;
+     	flex-direction: column;
+     }
+
+     hr {
+
+        border: 0;
+        clear:both;
+        display:block;
+        width: 96%;               
+        background-color:#00bfff;
+        height: 3px;
+        margin-top: 1vw;
+     }
+
+     .a {
+
+     	font-size: 25px;
+     	margin: 5px;
+     	padding: 5px;
+     	text-align: center;
+     }
+
+     input {
+
+     	border: 2px solid #00bfff;
+     	font-size: 23px;
+     	border-radius: 5px;
+     	outline: none;
+     	text-align: center;
+      padding: 5px;
+      -webkit-appearance: none;
+     	
+     }
+
+    #sub {
+    
+    font-size: 19px;
+    
+    border-color: #ffa500;
+    padding: 10px 25px 10px 25px;
+    font-weight: 550;
+    background-color: #00bfff;
+    color: #000;
+    border:0px;
+   }
+
+  #subdiv {
+  
+  display: flex;
+  justify-content: center;
+  margin-top: 10vh;
+
+  }
+
+  
+
+
+    </style>
+
+</head>
+<body>
+
+	<div id="fullcontent">
+
+		<div id="top">
+			
+			<div id="heading">
+				
+              <span><b style="color:#00bfff; ">Admit</b>Kard</span>
+
+			</div>
+
+		</div>
+
+		<hr>
+		
+        <div id="main">	
+
+          <div id="frm" style="display: flex; justify-content: center; margin-top: 7vw; ">
+          
+          <form onsubmit="checkno();" name="otpform">
+          	
+           <table>
+           	
+           	<tr>
+           		<td class="a">Enter otp  :</td>
+           		<td class="a"><input type="number" name="no" id="noo"></td>
+           	</tr>
+
+           </table>
+
+           <div id="subdiv">
+            <div style="text-align: center;"></div>
+                        <button id="sub" name="sub">Submit</button>
+           </div>
+
+          </form>
+        
+          </div>	
+
+
+        </div>
+
+	</div>
+
+<script type="text/javascript">
+  
+var s;
+
+function checkno(){
+
+
+var value = document.otpform.no.value;
+
+if(value == 1234)
+{
+  s= "Success , Your number has been verified";
+}
+else
+{
+  s= "Invalid otp verification, try again";
+}
+
+alert(s);
+
+
+}
+
+</script>
+
+
+</body>
+</html>
